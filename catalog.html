@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameMarket — Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Каталог товарів</h1>
+  <nav>
+    <a href="index.html">Бейби</a> |
+    <a href="about.html">Про нас</a> |
+    <a href="catalog.html">Игрульки</a>
+  </nav>
+</header>
+
+<main>
+  <div id="cart-info" class="cart-info">Товарів у кошику: 0</div>
+  <button id="clear-cart-btn" class="clear-cart-btn">Очистити кошик</button>
+
+  <div class="filters">
+    <input type="text" id="search-input" placeholder="Пошук">
+    <select id="category-filter">
+      <option value="All">Всі</option>
+      <option value="PC Games">Пк ігри</option>
+      <option value="Sandbox">Пісочниця</option>
+      <option value="Sports Games">Спортивні ігри</option>
+      <option value="Action Games">Екшн-ігри</option>
+      <option value="Survival Games">Ігри на виживання</option>
+      <option value="RPG">РПГ</option>
+      <option value="Game Currency">Ігрова валюта</option>
+      <option value="Accounts & Boosts">Акаунти та бусти</option>
+      <option value="Shooter">Шутер</option>
+      <option value="Adventure">Пригоди</option>
+    </select>
+    <input type="number" id="min-price-input" placeholder="від 0 грн">
+  </div>
+
+  <div id="results-info"></div>
+  <div id="products-container" class="products-container"></div>
+</main>
+
+<footer>2025. Створено мною</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
