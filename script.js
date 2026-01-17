@@ -147,7 +147,7 @@ const products = [
     id: 9,
     title: "CS2 Prime Status",
     price: 799,
-    category: "Accounts & Boosts",
+    category: "Accounts-Boosts",
     pc_platform: true,
     ps_platform: false,
     xbox_platform: false,
@@ -314,7 +314,7 @@ function clearCart() {
     updateCartCount();
   }
 }
-// 🔹 Фільтр з URL (для переходів з головної)
+
 const urlParams = new URLSearchParams(window.location.search);
 
 if (categoryFilter) {
