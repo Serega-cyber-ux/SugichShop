@@ -577,12 +577,11 @@ nav::after {
     display: flex;
     justify-content: center;
     gap: 15px;
-    width: fit-content;        /* ⬅️ КЛЮЧ */
+    width: fit-content;      
     margin: 20px auto 0;
     position: relative;
   }
 
-  /* линия РОВНО под кнопками */
   nav::after {
     content: "";
     position: absolute;
@@ -592,7 +591,6 @@ nav::after {
     height: 1px;
     background: rgba(255,255,255,0.25);
   }
-  /* Блок корзины */
   .cart-and-results {
     width: 100%;
     display: flex;
@@ -600,19 +598,16 @@ nav::after {
     align-items: center;
   }
 
-  /* Товар у кошику */
   #cart-info {
     margin: 12px auto;
     text-align: center;
   }
 
-  /* Знайдено товарів */
   #results-info {
     margin: 12px auto;
     text-align: center;
   }
-
-  /* Очистити кошик */
+  
   #clear-cart-btn {
     display: block;
     margin: 15px auto;
