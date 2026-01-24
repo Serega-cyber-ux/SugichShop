@@ -422,46 +422,71 @@ h2::after {
 
   /* HERO */
   .hero {
-    padding: 60px 15px;
+    padding: 50px 10px; /* чуть меньше отступов */
   }
 
   .hero h2 {
-    font-size: 30px;
+    font-size: 28px; /* немного меньше, чем на больших телефонах */
   }
 
   .hero-sub {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .main-btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
   }
 
+  /* TRUST */
   .trust {
-    gap: 10px;
-    font-size: 13px;
+    gap: 8px; /* меньше расстояние между элементами */
+    font-size: 12px;
   }
 
-
+  /* FILTERS */
   .filters {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
   .filters input,
   .filters select {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
   }
 
+  /* CART BUTTON */
+  .clear-cart-btn {
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  /* RESULTS INFO */
+  .results-info {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* CART AND RESULTS */
+  .cart-and-results {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
   #cart-info,
-  #results-info,
-  #clear-cart-btn {
+  #results-info {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
   }
+
 }
 
 
@@ -490,7 +515,7 @@ h2::after {
     min-width: 180px;
   }
 
-  #clear-cart-btn {
+  .clear-cart-btn {
     width: 260px;
   }
 }
@@ -519,7 +544,9 @@ nav::after {
 
 .results-info {
   display: block;
-  margin: 0 auto;
+  margin: 10 auto;
+          
+
 }
 
 .cart-and-results {
@@ -607,7 +634,7 @@ nav::after {
     margin: 12px auto;
     text-align: center;
   }
-  
+
   #clear-cart-btn {
     display: block;
     margin: 15px auto;
