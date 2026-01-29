@@ -85,7 +85,7 @@ const products = [
     description: "Хардкорна гра на виживання в багатокористувацькому світі, де головний ворог — інші гравці.",
     feedback: "",
     age_limit: "18+",
-    image: "rust.jpg",
+    image: "Rust.jpg",
     OS: "Windows",
     region: "global",
   },
@@ -109,8 +109,8 @@ const products = [
   },
   {
     id: 7,
-    title: "Roblox Premium 450 Robux",
-    price: 219,
+    title: "Roblox Premium 4500 Robux",
+    price: 1219,
     category: "Game Currency",
     pc_platform: true,
     ps_platform: true,
@@ -282,14 +282,13 @@ productsArray.forEach(function (product){
 
 
   card.innerHTML = `
+    <img class="product-image" src="images/products/${product.image}" alt="${product.title}">
     <h3>${product.title}</h3>
     <p class="product-category">Категорія: ${product.category}</p>
     <p class="product-description">${product.description}</p>
-    <p class="product-price">Ціна: ${product.price}</p>
+    <p class="product-price">Ціна: ${product.price} грн</p>
     <button class="add-to-card-btn">Додати в кошик</button>
-
   `;
-
   const addButton = card.querySelector(".add-to-card-btn");
   addButton.addEventListener("click", function (){
     cart.push(product.id);
@@ -300,11 +299,6 @@ productsArray.forEach(function (product){
 
   productsContainer.appendChild(card);
 });
-}
-function clearCart() {
-  cart = [];
-  localStorage.removeItem("cart");
-  updateCartCount();
 }
 
 function clearCart() {
