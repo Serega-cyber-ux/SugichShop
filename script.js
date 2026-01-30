@@ -282,7 +282,7 @@ productsArray.forEach(function (product){
 
 
   card.innerHTML = `
-    <img class="product-image" src="images/products/${product.image}" alt="${product.title}">
+    <img class="product-image" src="${product.image}" alt="${product.title}">
     <h3>${product.title}</h3>
     <p class="product-category">Категорія: ${product.category}</p>
     <p class="product-description">${product.description}</p>
