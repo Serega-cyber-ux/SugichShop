@@ -61,9 +61,47 @@ nav a:active {
   font-size: 28px;
   letter-spacing: 1px;
 }
+.logo-container {
+  position: fixed; /* закрепляем на экране */
+  top: 15px;       /* отступ сверху */
+  left: 15px;      /* отступ слева */
+  z-index: 1000;   /* чтобы было поверх всего */
+}
 
+.logo {
+  width: 60px;      /* уменьшенный размер */
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(255,165,0,0.6), 0 0 8px rgba(255,200,0,0.5);
+  border-radius: 10px;
+}
 
+.logo:hover {
+  transform: scale(1.2) rotate(-3deg);
+  filter: drop-shadow(0 0 10px #ff9a2f);
+  box-shadow: 0 4px 20px rgba(255,200,0,0.8);
+}
 
+h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #ff9a2f; /* яркий оранжевый */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7), 0 0 12px rgba(255,155,0,0.5);
+  margin-bottom: 20px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff6b00, #ff9a2f, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 2px 2px 8px rgba(0,0,0,0.7), 0 0 12px rgba(255,155,0,0.3); }
+  50% { text-shadow: 2px 2px 10px rgba(0,0,0,0.7), 0 0 20px rgba(255,200,0,0.7); }
+  100% { text-shadow: 2px 2px 12px rgba(0,0,0,0.7), 0 0 25px rgba(255,255,0,1); }
+}
 
 .products-container {
   display: flex;
@@ -495,7 +533,7 @@ h2::after {
 .home-page {
   background:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
-    url("images/home-bg.jpg") center / cover no-repeat scroll;
+    url("images/home-bg.jpg") center / cover no-repeat fixed;
 }
 
 .about-page {
@@ -522,6 +560,63 @@ h2::after {
 
 .product-card:hover .product-image {
   filter: brightness(0.85);
+}
+
+.about-hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about-hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #ff9a00;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: linear-gradient(145deg, #1f1f1f, #262626);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card span {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #ff6b00;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(255,107,0,0.5);
 }
 
 
