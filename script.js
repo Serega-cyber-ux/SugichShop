@@ -229,7 +229,7 @@ const products = [
   description: "Піксельна пригодницька гра з крафтом, будівництвом, битвами та величезною кількістю контенту.",
   feedback: "",
   age_limit: "12+",
-  image: "terraria.jpg",
+  image: "terraria.jpg.jpg",
   OS: "Windows / macOS / Linux",
   region: "global",
 },
