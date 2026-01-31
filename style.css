@@ -495,7 +495,7 @@ h2::after {
 .home-page {
   background:
     linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
-    url("images/home-bg.jpg") center / cover no-repeat fixed;
+    url("images/home-bg.jpg") center / cover no-repeat scroll;
 }
 
 .about-page {
